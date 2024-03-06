@@ -47,5 +47,5 @@ Use npm start to run the chat API.
 
 Use npm start to run the chat API.
  ```bash
-   npm test
+ npm test
  ```
