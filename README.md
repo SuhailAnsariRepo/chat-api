@@ -10,6 +10,8 @@ The Chat API is a Node.js-based application that provides a simple interface for
 - [Getting Started](#getting-started)
 - [Configuration](#configuration)
 - [Usage](#usage)
+- [Testing](#testing)
+
 
 ## Prerequisites
 
@@ -38,5 +40,12 @@ OpenAI API key: Obtain your OpenAI API key and replace 'OPENAI_API_KEY' in the c
 
 Use npm start to run the chat API.
  ```bash
-   npm start
+ npm start
+ ```
 
+## Testing
+
+Use npm start to run the chat API.
+ ```bash
+   npm test
+ ```
