@@ -12,9 +12,10 @@ async function completeChat(req, res) {
 
         // Your existing code for generating the completed text
         const completedText = await openaiService.generateResponse(partial_text);
-
+        const generatedText = completedText.choices[0]?.message?.content;
+        
         // Send the completed text as a JSON response
-        res.status(200).json({ completed_text: completedText });
+        res.status(200).json({ completed_text: generatedText });
     } catch (error) {
         // Handle errors and send a 500 status with an error message
         res.status(500).json({ error: error.message });
